@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LesGo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <script src="script.js"></script> -->
+    
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="brand">LesGo</a>
+        
+
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Explore</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+                
+                
+            </div>
+            
+        </div>
+      
+    </header>
+   <section class="home">
+    <video class="video-slide" src="./video/1.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="./video/2.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="./video/3.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="./video/4.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="./video/5.mp4" autoplay muted loop> </video>
+
+    
+    <div class="content">
+        <h1>FEEL NATURE <br><span>RELax</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, similique nihil! Fuga officiis saepe doloremque aut quis impedit beatae porro veniam illum eveniet? Saepe maxime similique asperiores? Culpa necessitatibus, sapiente rerum autem perspiciatis deleniti voluptatibus quasi debitis consequuntur veniam esse. Optio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dolorum eveniet pariatur perferendis aliquid explicabo, nesciunt ratione perspiciatis cumque deleniti at. Quod ipsam placeat quisquam accusamus alias repellat perferendis voluptate?</p>
+       <a href="#" class="more">Read More</a>
+    </div>
+    <div class="content">
+        <h1>Adventures.<br><span>off road</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, similique nihil! Fuga officiis saepe doloremque aut quis impedit beatae porro veniam illum eveniet? Saepe maxime similique asperiores? Culpa necessitatibus, sapiente rerum autem perspiciatis deleniti voluptatibus quasi debitis consequuntur veniam esse. Optio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dolorum eveniet pariatur perferendis aliquid explicabo, nesciunt ratione perspiciatis cumque deleniti at. Quod ipsam placeat quisquam accusamus alias repellat perferendis voluptate?</p>
+       <a href="#" class="more">Read More</a>
+    </div>
+    <div class="content">
+        <h1>Road trip. <br><span>together</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, similique nihil! Fuga officiis saepe doloremque aut quis impedit beatae porro veniam illum eveniet? Saepe maxime similique asperiores? Culpa necessitatibus, sapiente rerum autem perspiciatis deleniti voluptatibus quasi debitis consequuntur veniam esse. Optio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dolorum eveniet pariatur perferendis aliquid explicabo, nesciunt ratione perspiciatis cumque deleniti at. Quod ipsam placeat quisquam accusamus alias repellat perferendis voluptate?</p>
+       <a href="#" class="more">Read More</a>
+    </div>
+    <div class="content">
+        <h1>Camping.<br><span>in the woods</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, similique nihil! Fuga officiis saepe doloremque aut quis impedit beatae porro veniam illum eveniet? Saepe maxime similique asperiores? Culpa necessitatibus, sapiente rerum autem perspiciatis deleniti voluptatibus quasi debitis consequuntur veniam esse. Optio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dolorum eveniet pariatur perferendis aliquid explicabo, nesciunt ratione perspiciatis cumque deleniti at. Quod ipsam placeat quisquam accusamus alias repellat perferendis voluptate?</p>
+       <a href="#" class="more">Read More</a>
+    </div>
+    <div class="content">
+        <h1>enjoy <br><span>off road</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, similique nihil! Fuga officiis saepe doloremque aut quis impedit beatae porro veniam illum eveniet? Saepe maxime similique asperiores? Culpa necessitatibus, sapiente rerum autem perspiciatis deleniti voluptatibus quasi debitis consequuntur veniam esse. Optio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dolorum eveniet pariatur perferendis aliquid explicabo, nesciunt ratione perspiciatis cumque deleniti at. Quod ipsam placeat quisquam accusamus alias repellat perferendis voluptate?</p>
+       <a href="#" class="more">Read More</a>
+    </div>
+    <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+         <a href="#"><i class="fab fa-twitter"></i></a>
+
+    </div>
+    <div class="slider-nav">
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+
+
+    </div>
+
+   </section>
+   
+</body>
+     <script>
+  
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation")
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content")
+
+ 
+   
+    menuBtn.addEventListener("click" ,() => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active")
+    });
+
+
+
+    var sliderNav = function(manual) {
+    btns.forEach((btn) => {
+        btn.classList.remove("active");
+    });
+    slides.forEach((slide) => {
+        slide.classList.remove("active");
+    });
+
+
+    contents.forEach((content) => {
+        content.classList.remove("active");
+    });
+    btns[manual].classList.add("active");
+   slides[manual].classList.add("active");
+   contents[manual].classList.add("active")
+    
+    };
+
+    btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        sliderNav(i);
+    });
+    });
+
+    </script> 
+</html>
